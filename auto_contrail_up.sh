@@ -1,6 +1,8 @@
 
 #Clone the fresh contrail-installer repository from the git by using command below#
-git clone http://github.com/shravani89/contaril-installer -b test-m1-build
+git clone http://github.com/shravani89/contrail-installer -b test-m1-build
+
+cd contrail-installer 
 
 #Copy the file localrc-all from samples directory to the current directory as localrc and make sure that localrc file have the following changes#
 cp samples/localrc-all localrc
@@ -37,6 +39,7 @@ else
         echo " invalid option "
 fi
 
+#cd contrail-installer
 #Build the contrail with all the required packages using the command#
 ./contrail.sh build
 
